@@ -1,0 +1,57 @@
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    /* margin: 1em; */
+    width: 47%;
+    border: none;
+}
+
+
+
+.form-control>label {
+    text-align: right;
+    font: normal normal bold 16px/24px 'Heebo';
+    border: none;
+
+}
+
+.message {
+    width: 100%;
+    min-height: 100px;
+    margin-top: 16px;
+
+}
+
+.form-control>textarea {
+    height: auto;
+    width: 100%;
+    min-height: 100px;
+
+    margin-bottom: 20px;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    padding: 5px 12px;
+    border: none;
+    border-bottom: 4px solid #0EE1E1;
+
+}
+
+.form-control>input {
+
+    height: 50px;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: none;
+    border-bottom: 4px solid #0EE1E1;
+    padding: 0 12px;
+    width: 100%;
+}
+
+.form-control>input[type=submit] {
+    width: 100%;
+    height: 50px;
+    background: #0EE1E1 0% 0% no-repeat padding-box;
+    color: #000000;
+    font: normal normal bold 22px/30px 'Heebo';
+    margin-top: 100px;
+
+}

@@ -1,0 +1,98 @@
+    nav {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100px;
+        direction: ltr; 
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; 
+        background-color: #F7EDE3;
+        
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    #hamburger {
+        display: none;
+        font-size: 30px;
+        color: #2f2f2f;
+        padding: 10px;
+        text-align: right;
+
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+      
+    }
+
+    nav ul li {
+        display: flex;
+    }
+
+    nav ul li a {
+        display: block;
+        text-decoration: none;
+        color: #2f2f2f;
+        font-size: 20px;
+        width: 110px;
+        text-align: center;
+        line-height: 1.7;
+        font: normal normal bold 20px/32px 'Montserrat';
+    }
+
+    #container-Links {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+
+    }
+
+    .container-img {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container-img img {
+        width: 50px;
+
+    }
+
+
+    @media screen and (max:800px){
+    #hamburger {
+            display: block;
+        }
+
+
+        input[type="checkbox"]:checked~#navbar-links {
+            display: block;
+        }
+
+        nav {
+            flex-direction: column;
+            padding-top: 0;
+            align-items: start;
+        }
+
+        #navbar-links {
+            display: none;
+        }
+
+        nav ul {
+            display: block;
+            margin-right: 30px;
+
+
+        }
+
+        nav img {
+            display: none;
+        }
+    }

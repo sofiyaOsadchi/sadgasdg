@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="js/snitch.js"></script>
+</head>
+
+<body>
+   
+    <div id="playingArea";>
+        <h1>Catch The Snitch</h1>
+        <img id="snitch" src="./img/snitch.png" alt="Snitch">
+    </div>
+    <div id="timer">Time: 0s</div>
+    <div id="bestRecord">Best Record: 0s</div>
+    
+<div id="difficultyContainer">
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+    </select>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content modal-visible">
+        <span class="close">&times;</span>
+       
+        <p>You caught <br> the snitch!</p>
+        <img src="./img/pop.png" alt="boy">
+    </div>
+</div>
+
+
+</body>
+
+</html>

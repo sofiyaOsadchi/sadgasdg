@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    top: 0;
+    right: 0;
+    margin-bottom: 1em;
+    margin-top: -30px;
+}
+
+@media screen and (max-width: 800px) {
+    #header {
+        margin-top: 0;
+    }
+}
+
+#header>img {
+    width: 100%;
+}
+
+.about-me {
+    text-align: center;
+    /*  width: 70vw; */
+    margin-top: -60px;
+    margin-bottom: 4em;
+    /* background-color: #ffffff; */
+
+
+
+
+}
+
+.about-me>img {
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+}
+
+.about-me>h2 {
+    text-align: center;
+    font: normal normal 600 60px/95px 'Montserrat';
+    color: #3A3A3A;
+}
+
+.about-me>p {
+    font: normal normal 300 14px/20px 'Montserrat';
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 40%;
+    text-align: center;
+    align-items: center;
+}
+
+
+#gallery {
+    text-align: center;
+    background-color: #F6F6F6;
+}
+
+#gallery>h2 {
+    text-align: center;
+    font: normal normal 600 60px/95px 'Montserrat';
+    color: #3A3A3A;
+    padding-top: 1em;
+
+}
+
+#container-gallery {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90vw;
+
+}
+
+
+
+.card {
+    z-index: 1;
+    width: 252px;
+    height: 350px;
+    flex-direction: column;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;
+    transition: 0.2s ease-in-out;
+    margin: 2em;
+}
+
+.card {
+
+    border-radius: 1rem;
+    border: 0.5vmin solid #454647d3;
+    box-shadow: 0.4rem 0.4rem #454647d3;
+    overflow: hidden;
+    color: black;
+}
+
+.card>.bg-image {
+    width: 100%;
+    height: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.button>a {
+    text-decoration: none;
+}
+
+#bg-image1 {
+    background-image: url(./assets/first.PNG);
+}
+
+#bg-image2 {
+    background-image: url(./assets/coffe.PNG);
+}
+
+#bg-image3 {
+    background-image: url(./assets/couselling.PNG);
+}
+
+#bg-image4 {
+    background-image: url(./assets/lehovil.PNG);
+}
+
+#bg-image5 {
+    background-image: url(./assets/world.PNG);
+}
+
+#bg-image6 {
+    background-image: url(./assets/box.PNG);
+}
+
+#bg-image7 {
+    background-image: url(../jsProjects/harryPotter/img/sortingHatcard.png);
+}
+
+#bg-image8 {
+    background-image: url(../jsProjects/harryPotter/img/characters.png);
+}
+
+#bg-image9 {
+    background-image: url(../jsProjects/harryPotter/img/potioncard.png);
+}
+
+#bg-image10 {
+    background-image: url(../jsProjects/harryPotter/img/snichcrad.png);
+}
+
+#bg-image11 {
+    background-image: url(./assets/snake.png);
+}
+
+#bg-image12 {
+    background-image: url(./assets/mathGame.png);
+}
+
+#harry-container {
+    /*  margin-top: 2em; */
+    padding-top: 3em;
+    padding-bottom: 3em;
+    align-items: center;
+    background-color: #F6F6F6;
+
+}
+
+#harry-container h2 {
+    padding-bottom: 1em;
+    text-align: center;
+    font: normal normal 600 60px/95px 'Montserrat';
+    color: #3A3A3A;
+    /*  padding-top: 1em; */
+}
+
+#potter-gallery {
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+
+.card>h3 {
+    font: normal normal 400 18px/28px 'Montserrat';
+    padding-top: 1.5em;
+}
+
+.card>p {
+    font: normal normal 300 14px/20px 'Montserrat';
+    padding-right: 2em;
+    padding-left: 2em;
+    margin-bottom: 2em;
+}
+
+
+@media screen and (max-width:1200px) {
+    .card {
+        width: 70vw;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    .card {
+        width: 80vw;
+    }
+
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #E6E2D8;
+    padding-top: 1em;
+    /* margin-top: 6em; */
+}
+
+.contact-text {
+    font-family: 'Montserrat';
+    padding: 2em;
+    justify-content: center;
+
+}
+
+.contact-text>h2 {
+    font-size: 50px;
+
+
+}
+
+.contact-text>p {
+    font-size: 25px;
+    text-align: center;
+
+
+}
+
+.more-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2em;
+    background-color: #E6E2D8;
+}
+
+
+.more-details>.img-contaiber1 {
+    width: 20vw;
+}
+
+.more-details>.img-contaiber2 {
+    width: 20vw;
+}
+
+.more-details>.img-contaiber1>img {
+    width: 100%;
+    margin-top: 150px;
+
+}
+
+.more-details>.img-contaiber2>img {
+    width: 100%;
+    margin-top: -100px;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .more-details>.img-contaiber1>img {
+        display: none;
+
+    }
+
+    .more-details>.img-contaiber2>img {
+        display: none;
+    }
+
+    .contact-form {
+
+        margin-top: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .contact-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        margin-top: -70px;
+
+    }
+}
+
+
+.contact-form {
+
+    margin-top: -10px;
+}
+
+#container_footer {
+    background-color: rgb(23, 22, 22);
+    color: azure;
+    display: flex;
+    justify-content: space-between;
+}
+
+#container_footer>p {
+    padding: 2em;
+    font-family: 'Montserrat';
+}

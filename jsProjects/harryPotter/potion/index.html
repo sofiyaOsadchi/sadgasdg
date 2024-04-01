@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/recipes.js" defer></script>
+    <!--    <script src="js/game.js" defer></script> -->
+    <script src="js/main.js" defer></script>
+
+
+
+</head>
+
+<body>
+    <h1>Welcom to Potions Class</h1>
+    <h2>Follow the reciepe and drag and drop the ingridients into the caulderon</h2>
+    <div id="ingredients"></div>
+
+    <div id="recipe-display">
+        <h2 id="recipe-name"></h2>
+        <ul id="recipe-steps"></ul>
+    </div>
+
+    <div id="cauldron" ondragover="allowDrop(event)" ondrop="drop(event)">
+        <button id="submit-recipe">Submit Potion</button>
+        <img src="./img/12.png" alt="" id="cauldron-image">
+        <div id="ingredient-container">
+        </div>
+        <audio id="dropSound" src="sounds/Liquid-Drip-01.m4a" preload="auto"></audio>
+    </div>
+
+
+    <div id="success-popup" class="popup">
+        <div class="popup-content">
+            <img src="img/popup.png" alt="Success">
+            <button onclick="closePopup('success-popup')">Close</button>
+        </div>
+        <audio id="successSound" src="sounds/Saxaphone-Noodle-01.m4a" preload="auto"></audio>
+    </div>
+
+    <!-- Failure Popup -->
+    <div id="failure-popup" class="popup">
+        <div class="popup-content">
+            <img src="img/popup (1).png" alt="Failure">
+            <button onclick="closePopup('failure-popup')">Close</button>
+        </div>
+        <audio id="failureSound" src="sounds/Evil-Laugh.wav" preload="auto"></audio>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

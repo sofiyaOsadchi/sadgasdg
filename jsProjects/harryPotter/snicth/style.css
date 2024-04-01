@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('./harry_p/HARRYP__.TTF') format('truetype');
+}
+
+body {
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+
+#playingArea {
+    width: 99vw;
+    height: 99vh;
+    border: 2px solid black;
+    position: relative;
+    background-image: url('./img/bcg.png');
+    background-size: cover;
+    margin-top: 30px;
+
+}
+
+h1 {
+
+    text-align: center;
+    font-size: 100px;
+    color: #deb11c;
+   /*  background-color: #3230306c; */
+    width: 40%;
+    width: fit-content;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#snitch {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    animation: roll 2s linear infinite;
+}
+
+@keyframes flyIn {
+
+    0% {
+        transform: translateX(100%) scale(0.5) rotate(-30deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0) scale(1) rotate(0deg);
+        opacity: 1;
+    }
+
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.modal {
+    display: none;
+}
+
+.modal-content {
+    position: absolute;
+    z-index: 0;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(35, 33, 33, 0.5);
+    height: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal-content img {
+    z-index: 1;
+    width: 30%;
+    height: auto;
+    margin-right: 10px;
+    animation: flyIn 1s forwards, bounce 1s 1s infinite;
+}
+
+.modal-content p {
+    font-size: 60px;
+    color: #f5d365;
+    z-index: 2;
+    background-color: rgba(35, 33, 33, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    flex-grow: 1;
+    max-width: 25%;
+    animation: fadeIn 2s ease-in;
+}
+
+.close {
+    color: #deb11c;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#timer {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    font-size: 60px;
+    color: #deb11c;
+    /* font-family: 'Harry Potter', sans-serif; */
+    background-color: #3230306c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+
+}
+
+#bestRecord {
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    font-size: 60px;
+    color: #deb11c;
+    background-color: #3230306c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: fit-content;
+    height: 50px;
+    text-align: center;
+}
+
+#difficultyContainer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+    color: #deb11c;
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: fit-content;
+    height: 30px;
+    text-align: center;
+}
+
+#difficulty {
+    font-size: 15px;
+    color: #deb11c;
+    background-color: #fefefe;
+    font-family: 'MyCustomFont',
+        sans-serif;
+    ;
+}
